@@ -1,0 +1,13 @@
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\bin\Debug\BrowserApp2.exe.config
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\bin\Debug\BrowserApp2.exe
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\bin\Debug\BrowserApp2.pdb
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\bin\Debug\Guna.UI2.dll
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\obj\Debug\BrowserApp2.csproj.AssemblyReference.cache
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\obj\Debug\BrowserApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\obj\Debug\BrowserApp2.WelcomeForm.resources
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\obj\Debug\BrowserApp2.Properties.Resources.resources
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\obj\Debug\BrowserApp2.csproj.GenerateResource.cache
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\obj\Debug\BrowserApp2.csproj.CoreCompileInputs.cache
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\obj\Debug\BrowserApp2.csproj.CopyComplete
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\obj\Debug\BrowserApp2.exe
+C:\Users\HeroidesLab\Documents\Work\BrowserApp2\BrowserApp2\obj\Debug\BrowserApp2.pdb

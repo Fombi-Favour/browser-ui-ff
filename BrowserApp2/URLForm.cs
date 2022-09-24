@@ -11,9 +11,13 @@ using System.Windows.Forms;
 
 namespace BrowserApp2
 {
-    public partial class WelcomeForm : Form
+    public partial class URLForm : Form
     {
-        public WelcomeForm()
+
+        //Fields
+        string urlText;
+
+        public URLForm()
         {
             InitializeComponent();
         }
@@ -24,33 +28,29 @@ namespace BrowserApp2
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        private void btnSettings_Click(object sender, EventArgs e)
+        private void URLForm_MouseDown(object sender, MouseEventArgs e)
         {
-            new URLForm().ShowDialog();
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
-        private void btnMax_Click(object sender, EventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
         {
-            if(WindowState == FormWindowState.Normal)
-                WindowState = FormWindowState.Maximized;
+            if(txtUrl.Text == "")
+            {
+                urlText = txtUrl.Text;
+                MessageBox.Show("url empty!!!");
+            }
             else
-                WindowState = FormWindowState.Normal;
-        }
-
-        private void btnMin_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        private void guna2Panel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            {
+                this.Hide();
+                new AdminForm().ShowDialog();
+            }
         }
     }
 }

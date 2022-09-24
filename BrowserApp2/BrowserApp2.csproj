@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="URLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="URLForm.Designer.cs">
+      <DependentUpon>URLForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WelcomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +69,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="URLForm.resx">
+      <DependentUpon>URLForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WelcomeForm.resx">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
     </EmbeddedResource>
