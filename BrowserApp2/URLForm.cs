@@ -15,7 +15,7 @@ namespace BrowserApp2
     {
 
         //Fields
-        string urlText;
+        public Uri urlText;
 
         public URLForm()
         {
@@ -41,9 +41,10 @@ namespace BrowserApp2
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if(txtUrl.Text == "")
+            urlText = new Uri(txtUrl.Text);
+
+            if (txtUrl.Text == "")
             {
-                urlText = txtUrl.Text;
                 MessageBox.Show("url empty!!!");
             }
             else

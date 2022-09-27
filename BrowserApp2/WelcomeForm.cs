@@ -13,10 +13,6 @@ namespace BrowserApp2
 {
     public partial class WelcomeForm : Form
     {
-
-        // Field
-        private Form currentForm;
-
         public WelcomeForm()
         {
             InitializeComponent();
@@ -30,6 +26,7 @@ namespace BrowserApp2
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new URLForm().ShowDialog();
         }
 
@@ -55,23 +52,6 @@ namespace BrowserApp2
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        public void OpenChildForm(Form childForm)
-        {
-            if(currentForm != null)
-            {
-                //open only form
-                currentForm.Close();
-            }
-            currentForm = childForm;
-            currentForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelDesktop.Controls.Add(childForm);
-            panelDesktop.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
         }
     }
 }

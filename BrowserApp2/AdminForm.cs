@@ -42,9 +42,7 @@ namespace BrowserApp2
                 if (txtPass.Text != "")
                 {
                     this.Hide();
-                    WelcomeForm form = new WelcomeForm();
-                    form.OpenChildForm(new DisplayForm());
-                    form.Show();
+                    new DisplayForm().Show();
                 }
                 else
                     MessageBox.Show("Incorrect Password!!!");
